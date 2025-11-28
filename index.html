@@ -1,2062 +1,443 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background: #fff;
-}
-
-/* HEADER */
-.header {
-    padding: 20px 0;
-    background-color: #FFF2E1;
-}
-
-.container {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo img {
-    width: 120px;
-}
-
-/* NAV DESKTOP */
-.nav {
-    display: flex;
-    gap: 4em;
-}
-
-.heroBack{
- width: 100%;
-}
-
-.nav a {
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
-    
-}
-
-.nav_right_links{
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    gap: 4em;
-}
-
-/* AUTH BUTTONS */
-.auth-buttons {
-    display: flex;
-    gap: 15px;
-}
-
-.login {
-    padding: 10px 20px;
-    border: none;
-    background:white;
-    font-weight: 400;
-    border-radius: 20px;
-    color: #6C6C6C;
-}
-
-.signup {
-    padding: 10px 20px;
-    background: #F48C06;
-    border: none;
-    color: white;
-    border-radius: 20px;
-    font-weight: 600;
-}
-
-/* MOBILE MENU */
-.menu-mobile {
-    display: none;
-    font-size: 26px;
-    cursor: pointer;
-}
-
-/* HERO SECTION */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #FFF2E1;
-    clip-path: circle(74.6% at 51% 21%);
-    padding: 40px 5%;
-    flex-wrap: wrap;
-}
-
-.hero-text {
-    max-width: 480px;
-}
-
-.hero-text h1 {
-    font-size: 40px;
-    line-height: 48px;
-    color: #2F327D;;
-    margin-bottom: 20px;
-}
-
-.hero-text h1 span {
-    color: #F48C06;
-}
-
-.hero-text p {
-    color: #666;
-    margin-bottom: 25px;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 15px;
-}
-
-.btn-primary {
-    padding: 14px 28px;
-    background: #F48C06;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    font-weight: 600;
-}
-
-.btn-secondary {
-    padding: 14px 28px;
-    color: 252641;
-    background: none;
-    border: none;
-    border-radius: 8px;
-    font-weight: 400;
-}
-
-/* HERO IMAGE + CARDS */
-.hero-image {
-    position: relative;
-    width: 340px;
-}
-
-.hero-image img {
-    width: 100%;
-    border-radius: 20px;
-}
-
-.card {
-    position: absolute;
-    background: #fff;
-    padding: 12px 14px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    font-size: 13px;
-}
-
-/* Positions like the layout */
-.card-students {
-    top: 20px;
-    left: -40px;
-}
-
-.card-class {
-    bottom: 40px;
-    left: -60px;
-}
-
-.card-success {
-    bottom: 90px;
-    right: -40px;
-}
-
-
-/* SECTION CONTAINER */
-.trusted {
-    width: 100%;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.trusted-text {
-    font-size: 14px;
-    color: #707070;
-    margin-bottom: 30px;
-    font-weight: 500;
-}
-
-/* LOGO GRID (mobile-first) */
-.logos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* mobile */
-    gap: 25px;
-    align-items: center;
-    justify-items: center;
-}
-
-/* LOGO STYLE */
-.logos img {
-    width: 90px;       /* mobile size */
-    opacity: 0.45;
-    transition: all .3s ease;
-}
-
-.logos img:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
-}
-
-
-
-/* ALL-IN-ONE CONTAINER */
-.all-in-one {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-/* TÍTULO E DESCRIÇÃO */
-.all-in-one h2 {
-    font-size: 24px;
-    color: #3a3a3a;
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
-.description {
-    font-size: 14px;
-    color: #707070;
-    margin-bottom: 40px;
-    font-weight: 400;
-}
-
-/* CARDS DE FUNÇÕES */
-.features {
-    display: grid;
-    grid-template-columns: 1fr; /* Mobile */
-    gap: 20px;
-}
-
-/* ESTILO DO CARD */
-.feature-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.icon {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 20px;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    margin: 0 auto;
-}
-
-.icon img {
-    width: 30px;
-    height: 30px;
-}
-
-.feature-card h3 {
-    font-size: 18px;
-    color: #3a3a3a;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.feature-card p {
-    font-size: 14px;
-    color: #707070;
-    font-weight: 400;
-}
-
-
-.section {
-  padding: 4rem 1.5rem;
-}
-
-
-/* ===== SECTION BASE ===== */
-.section-info {
-  padding: 80px 20px;
-  background-color: #ffffff;
-  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #252641;
-}
-
-#section-info{
-    margin: 4%;
-    background-position: center;
-    background-size: cover;
-}
-/* ===== TÍTULO E DESCRIÇÃO DO TOPO ===== */
-.info-title {
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: center;
-  color: #2F327D;
-  margin-bottom: 10px;
-}
-
-.info-highlight {
-  color: #F48C06; /* Skilline laranja */
-}
-
-.info-description {
-  max-width: 720px;
-  margin: 0 auto 50px;
-  text-align: center;
-  color: #696984;
-  font-size: 0.95rem;
-  line-height: 1.7;
-}
-
-/* ===== CARDS SUPERIORES (FOR INSTRUCTORS / FOR STUDENTS) ===== */
-.info-cards {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  flex-wrap: wrap;
-  margin-bottom: 80px;
-}
-
-.info-card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 18px;
-  width: 100%;
-  max-width: 350px;
-  box-shadow: 0px 12px 30px rgba(15, 35, 52, 0.15);
-}
-
-.info-card img {
-  width: 100%;
-  display: block;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* camada escurecida com conteúdo centralizado */
-.info-card__overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.25) 0%,
-    rgba(0, 0, 0, 0.55) 100%
-  );
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  text-align: center;
-}
-
-.info-card__title {
-  font-size: 0.9rem;
-  letter-spacing: 0.12em;
-  margin-bottom: 14px;
-}
-
-.info-card__btn {
-  border: none;
-  border-radius: 999px;
-  padding: 10px 26px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  cursor: pointer;
-  background: #ffffff;
-  color: #252641;
-  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.18);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s, color 0.25s;
-}
-
-.info-card__btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.3);
-  background: #F48C06;
-  color: #ffffff;
-}
-
-/* ===== BLOCO INFERIOR (TEXTO + IMAGEM COM BORDA COLORIDA) ===== */
-.info-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  max-width: 1030px;
-  margin: 0 auto;
-}
-
-/* texto à esquerda */
-.info-bottom__text {
-    background-position: center;
-    background-size: cover;
-  background-image: url('skill3.png');
-  flex: 1 1 320px;
-  text-align: left;
-}
-
-.info-bottom__title {
-  font-size: 1.4rem;
-  line-height: 1.6;
-  color: #2F327D;
-  margin-bottom: 14px;
-}
-
-/* o “Every” começa com bolinha laranja */
-.info-bottom__title::first-letter {
-  color: #F48C06;
-}
-
-/* para garantir a parte colorida do texto (já usamos span.info-highlight) */
-.info-bottom__title .info-highlight {
-  color: #F48C06;
-}
-
-.info-bottom__desc {
-  font-size: 0.95rem;
-  color: #696984;
-  line-height: 1.7;
-  margin-bottom: 10px;
-}
-
-.info-bottom__link {
-  display: inline-block;
-  margin-top: 8px;
-  font-size: 0.9rem;
-  color: #2F327D;
-  text-decoration: underline;
-  font-weight: 500;
-}
-
-/* imagem à direita com moldura colorida */
-.info-bottom__image {
-    width: 360px;
-    background: none;
-    position: relative;
-    flex: 1 1 360px;
-}
-
-.iframe_video{
-    background-position: center;
-    background-size: cover;
-     background-image: url('skill4.png');
-  padding: 24px;
-  border-radius: 20px;
-  position: relative;
-  flex: 1 1 360px;
-}
-
-/* “moldura” azul atrás da imagem */
-.info-bottom__image::before {
-  content: "";
-  position: absolute;
-  inset: 16px 16px auto auto;
-  width: 75%;
-  height: 82%;
-  border-radius: 20px;
-    z-index: 0;
-}
-
-/* imagem principal */
-.info-bottom__image img {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  display: block;
-  border-radius: 20px;
-}
-
-/* botão play */
-.info-play-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ffffff;
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
-  color: #23BDEE;
-  font-size: 1.2rem;
-}
-
-/* botão play */
-.info-play-btn2 {
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: none;
-  padding: 0.5em;
-  cursor: pointer;
-  background: #ffffff;
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
-  color: #23BDEE;
-  font-size: 1.2rem;
-}
-
-
-/* =============================== */
-/* SECTION FEATURE UI STYLES */
-/* =============================== */
-
-/* Container Principal */
-.section-feature-ui {
-    padding: 80px 20px;
-    background-color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    overflow: hidden; /* Garante que elementos fora do layout principal não causem scroll indesejado */
-}
-
-.feature-content {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column; /* Padrão mobile: imagem em cima, texto embaixo */
-    align-items: center;
-    gap: 40px;
-}
-
-/* Imagem da UI (Responsiva) */
-.feature-image {
-    width: 100%;
-    max-width: 600px;
-    /* Para replicar o layout, a imagem é um PNG ou SVG grande com fundos coloridos */
-}
-
-.feature-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Bloco de Texto */
-.feature-text {
-    width: 100%;
-    max-width: 480px;
-    text-align: center; /* Alinhamento centralizado para mobile */
-}
-
-.feature-title {
-    font-size: 2rem;
-    line-height: 1.3;
-    color: #2F327D;
-    margin-bottom: 30px;
-    font-weight: 700;
-}
-
-.feature-title .highlight-text {
-    color: #F48C06; /* Cor laranja de destaque */
-}
-
-/* Lista de Recursos */
-.feature-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-}
-
-.feature-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 25px;
-    gap: 15px;
-}
-
-.feature-item p {
-    color: #696984;
-    font-size: 1rem;
-    line-height: 1.6;
-    font-weight: 400;
-}
-
-.feature-item p strong {
-    font-weight: 600;
-}
-
-/* Estilização dos Ícones/Quadrados */
-.icon-square {
-    flex-shrink: 0; /* Impede que o ícone diminua */
-    width: 25px;
-    height: 25px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.icon-blue-orange {
-    /* Representação do ícone quadriculado Azul/Laranja */
-    /* Usaremos um gradiente para simular os quadrantes */
-    background: linear-gradient(to top right, #23BDEE 50%, #F48C06 50%);
-    background-size: 200% 200%;
-    background-position: top left;
-}
-
-.icon-orange-blue {
-    /* Representação do ícone quadriculado Laranja/Azul */
-    background: linear-gradient(to bottom left, #F48C06 50%, #23BDEE 50%);
-    background-size: 200% 200%;
-    background-position: top right;
-}
-
-.icon-person {
-    /* Representação do ícone de Pessoas/Grupo */
-    background-color: #ffffff; /* Fundo branco ou claro */
-    color: #23BDEE; /* Cor do ícone */
-    font-size: 1.2rem;
-    /* Para este exemplo, vou usar um ícone simples, mas idealmente seria um SVG ou Font Icon */
-    content: "👥"; /* Usando emoji/caractere para simular o ícone */
-}
-
-
-/* =============================== */
-/* SECTION FEATURE TOOLS STYLES */
-/* =============================== */
-
-.section-feature-tools {
-    padding: 80px 20px;
-    background-color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    overflow: hidden;
-}
-
-.tools-content {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column; /* Mobile: Texto em cima, Imagem embaixo */
-    align-items: center;
-    gap: 40px;
-}
-
-/* Bloco de Texto (Esquerda no Desktop) */
-.tools-text {
-    width: 100%;
-    max-width: 500px;
-    text-align: center; /* Centralizado no mobile */
-}
-
-.tools-title {
-    font-size: 2.2rem;
-    line-height: 1.2;
-    color: #252641;
-    margin-bottom: 20px;
-    font-weight: 700;
-}
-
-.tools-title .highlight-text {
-    color: #F48C06; /* Cor laranja de destaque */
-}
-
-.tools-description {
-    color: #696984;
-    font-size: 1rem;
-    line-height: 1.7;
-    font-weight: 400;
-}
-
-/* Bloco da Imagem (Direita no Desktop) */
-.tools-image {
-    position: relative;
-    width: 100%;
-    max-width: 480px;
-    /* Adicione aqui qualquer estilo para os círculos de fundo e ícones se forem feitos em CSS.
-       Neste exemplo, assumimos que a imagem `student-thinking.png` inclui todos os círculos e ícones (como é comum em designs assim) para simplificar. */
-}
-
-.tools-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-
-/* =============================== */
-/* SECTION ASSESSMENTS STYLES */
-/* =============================== */
-
-.section-assessments {
-    padding: 80px 20px;
-    background-color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    overflow: hidden;
-}
-
-.assessments-content {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column-reverse; /* Mobile: Visual em cima, Texto embaixo */
-    align-items: center;
-    gap: 40px;
-}
-
-/* Bloco de Avaliação Visual (Esquerda no Desktop) */
-.assessment-visual {
-    position: relative;
-    width: 100%;
-    max-width: 480px;
-    /* Adicione aqui estilos para os círculos coloridos de fundo (laranja, azul, verde, rosa) se não estiverem na imagem de fundo.
-       Para este exemplo, estamos focando no cartão de avaliação e posicionamento. */
-}
-
-.assessment-card {
-    position: relative;
-    background: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    width: 90%; /* Ajuste o tamanho do cartão */
-    margin: 40px auto; /* Para dar espaço aos elementos de fundo (círculos) e o feedback */
-}
-
-/* Botões de status (X e V) */
-.assessment-actions {
-    position: absolute;
-    top: -20px; /* Posição acima do cartão */
-    right: 20px;
-    display: flex;
-    gap: 10px;
-    z-index: 10;
-}
-
-.action-btn {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    border: 2px solid #ffffff;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 700;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.action-wrong {
-    background-color: #FF6969; /* Vermelho/Rosa */
-}
-
-.action-right {
-    background-color: #4CAF50; /* Verde */
-}
-
-/* Texto da Pergunta */
-.question-label {
-    font-size: 0.9rem;
-    color: #8C8C8C;
-    margin-bottom: 5px;
-    font-weight: 500;
-}
-
-.question-text {
-    font-size: 1.4rem;
-    color: #333333;
-    line-height: 1.3;
-    margin-bottom: 15px;
-    font-weight: 600;
-}
-
-/* Imagem da Pergunta */
-.question-image-container {
-    width: 100%;
-    margin-bottom: 10px;
-    overflow: hidden;
-    border-radius: 12px;
-}
-
-.question-image-container img {
-    width: 100%;
-    display: block;
-    height: auto;
-}
-
-/* Mensagem de Confirmação (Feedback) */
-.answer-feedback {
-    position: absolute;
-    bottom: -30px; /* Posição abaixo do cartão */
-    right: 30px;
-    background-color: #ffffff;
-    color: #4CAF50; /* Cor do texto de sucesso */
-    padding: 10px 15px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    font-size: 0.9rem;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    z-index: 10;
-}
-
-.feedback-icon {
-    font-size: 1.2rem;
-}
-
-/* Bloco do Texto Descritivo (Direita no Desktop) */
-.assessments-text {
-    width: 100%;
-    max-width: 480px;
-    text-align: center; /* Centralizado no mobile */
-}
-
-.assessments-title {
-    font-size: 2.2rem;
-    line-height: 1.2;
-    color: #252641;
-    margin-bottom: 20px;
-    font-weight: 700;
-}
-
-.assessments-title .highlight-text {
-    color: #F48C06; /* Cor laranja de destaque */
-}
-
-.assessments-description {
-    color: #696984;
-    font-size: 1rem;
-    line-height: 1.7;
-    font-weight: 400;
-}
-
-/* =============================== */
-/* SECTION DOUBLE FEATURE STYLES */
-/* =============================== */
-
-.section-double-feature {
-    padding: 80px 20px;
-    background-color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    overflow: hidden;
-}
-
-/* Container de cada bloco (Gerenciamento e Discussões) */
-.feature-block {
-    max-width: 1100px;
-    margin: 0 auto 100px; /* Espaço entre os dois blocos */
-    display: flex;
-    flex-direction: column; /* Padrão mobile: empilhado */
-    align-items: center;
-    gap: 40px;
-}
-
-/* Estilo comum para o texto dentro dos blocos */
-.feature-text {
-    width: 100%;
-    max-width: 480px;
-    text-align: center; /* Centralizado no mobile */
-}
-
-.feature-title {
-    font-size: 2rem;
-    line-height: 1.2;
-    color: #252641;
-    margin-bottom: 20px;
-    font-weight: 700;
-}
-
-.feature-title .highlight-text {
-    color: #F48C06;
-}
-
-.feature-description {
-    color: #696984;
-    font-size: 1rem;
-    line-height: 1.7;
-    font-weight: 400;
-}
-
-/* Estilo comum para as imagens */
-.feature-image {
-    width: 100%;
-    max-width: 500px;
-    position: relative;
-}
-
-.feature-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* =============================== */
-/* CTA BUTTON STYLES */
-/* =============================== */
-
-/* Container para centralizar o botão */
-.cta-button-container {
-    width: 100%;
-    text-align: center;
-    margin-top: 60px; /* Espaço acima do botão */
-    margin-bottom: 20px;
-}
-
-.btn-more-features {
-    display: inline-block;
-    padding: 12px 30px;
-    border: 1px solid #F48C06; /* Borda laranja */
-    border-radius: 999px; /* Borda bem arredondada */
-    background: transparent;
-    color: #F48C06; /* Texto laranja */
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.btn-more-features:hover {
-    background-color: #F48C06;
-    color: #ffffff;
-    box-shadow: 0 5px 15px rgba(244, 140, 6, 0.3);
-}
-
-
-/* =============================== */
-/* SECTION INTEGRATIONS STYLES */
-/* =============================== */
-
-.section-integrations {
-    padding: 80px 20px;
-    background-color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    overflow: hidden;
-}
-
-.integrations-content {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column; /* Mobile: Logos em cima, Texto embaixo */
-    align-items: center;
-    gap: 60px;
-}
-
-/* ------------------ */
-/* LOGO BLOCK (LEFT) */
-/* ------------------ */
-
-.integration-logos {
-    width: 100%;
-    max-width: 450px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px; /* Espaço entre as linhas de logos */
-    align-items: center;
-}
-
-.logo-row {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    gap: 30px;
-}
-
-.logo-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 40%; /* Controla a largura para manter o layout 2x2 */
-}
-
-.logo-item img {
-    width: 100%;
-    max-width: 100px; /* Tamanho máximo do logo */
-    height: auto;
-    margin-bottom: 5px;
-}
-
-.logo-item p {
-    font-size: 0.9rem;
-    color: #333;
-    font-weight: 500;
-}
-
-/* ------------------ */
-/* TEXT BLOCK (RIGHT) */
-/* ------------------ */
-
-.integrations-text {
-    width: 100%;
-    max-width: 500px;
-    text-align: center; /* Centralizado no mobile */
-}
-
-.subtitle {
-    font-size: 0.8rem;
-    color: #8C8C8C;
-    letter-spacing: 0.2em;
-    margin-bottom: 5px;
-    position: relative;
-    /* Linha sutil à esquerda do título (apenas no desktop) */
-}
-
-.integrations-title {
-    font-size: 2rem;
-    line-height: 1.3;
-    color: #252641;
-    margin-bottom: 20px;
-    font-weight: 700;
-}
-
-.integrations-title .highlight-text {
-    color: #F48C06;
-}
-
-.integrations-description {
-    color: #696984;
-    font-size: 1rem;
-    line-height: 1.7;
-    margin-bottom: 30px;
-}
-
-/* ------------------ */
-/* CTA BUTTON STYLES */
-/* ------------------ */
-
-.btn-all-integrations {
-    display: inline-block;
-    padding: 12px 30px;
-    border: 1px solid #FF9500; /* Laranja da imagem */
-    border-radius: 999px;
-    background: transparent;
-    color: #FF9500;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.btn-all-integrations:hover {
-    background-color: #FF9500;
-    color: #ffffff;
-}
-
-
-/* =============================== */
-/* SECTION TESTIMONIALS STYLES */
-/* =============================== */
-
-.section-testimonials {
-    padding: 80px 20px;
-    background-color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    overflow: hidden;
-}
-
-.testimonials-content {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column; /* Mobile: Texto em cima, Visual embaixo */
-    align-items: center;
-    gap: 60px;
-}
-
-/* ------------------ */
-/* TEXT BLOCK (LEFT) */
-/* ------------------ */
-
-.testimonials-info {
-    width: 100%;
-    max-width: 480px;
-    text-align: center; /* Centralizado no mobile */
-}
-
-.testimonials-info .subtitle {
-    font-size: 0.8rem;
-    color: #8C8C8C;
-    letter-spacing: 0.2em;
-    margin-bottom: 5px;
-    position: relative;
-}
-
-.testimonials-info .subtitle::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 40px; 
-    height: 1px;
-    background-color: #D3D3D3; 
-    transform: translateY(-50%);
-}
-
-.testimonials-title {
-    font-size: 2.2rem;
-    line-height: 1.2;
-    color: #252641;
-    margin-bottom: 25px;
-    font-weight: 700;
-}
-
-.testimonials-description {
-    color: #696984;
-    font-size: 1rem;
-    line-height: 1.7;
-    margin-bottom: 25px;
-}
-
-.testimonials-cta {
-    color: #696984;
-    font-size: 1rem;
-    line-height: 1.7;
-    margin-bottom: 25px;
-}
-
-/* ------------------ */
-/* CTA BUTTON STYLES */
-/* ------------------ */
-
-.btn-write-assessment {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 12px 25px;
-    border: 1px solid #F48C06; /* Borda laranja */
-    border-radius: 999px; /* Borda bem arredondada */
-    background: transparent;
-    color: #F48C06; /* Texto laranja */
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.btn-write-assessment .arrow-icon {
-    font-size: 1.2em;
-    line-height: 1;
-}
-
-.btn-write-assessment:hover {
-    background-color: #F48C06;
-    color: #ffffff;
-    box-shadow: 0 5px 15px rgba(244, 140, 6, 0.3);
-}
-
-
-/* =============================== */
-/* SECTION NEWS AND RESOURCES STYLES */
-/* =============================== */
-
-.section-news-resources {
-    padding: 80px 20px;
-    background-color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    overflow: hidden;
-    text-align: center;
-}
-
-.news-header {
-    margin-bottom: 60px;
-}
-
-.news-main-title {
-    font-size: 2rem;
-    color: #252641;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.news-subtitle {
-    font-size: 1rem;
-    color: #696984;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* GRID PRINCIPAL (Mobile: Coluna única, Desktop: Duas colunas) */
-.news-main-grid {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr; /* Padrão Mobile */
-    gap: 40px;
-    align-items: flex-start;
-}
-
-/* Estilo Básico do Cartão de Notícia */
-.news-card {
-    text-align: left;
-    background-color: #ffffff;
-}
-
-.news-image-container {
-    width: 100%;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-
-.news-image-container .responsive-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 12px;
-}
-
-.news-tag {
-    display: inline-block;
-    background-color: #F48C06;
-    color: white;
-    font-size: 0.75rem;
-    font-weight: 500;
-    padding: 4px 10px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
-
-.news-title {
-    font-size: 1.25rem;
-    color: #252641;
-    font-weight: 600;
-    line-height: 1.4;
-    margin-bottom: 15px;
-}
-
-.news-description {
-    font-size: 0.95rem;
-    color: #696984;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-.news-link {
-    display: inline-block;
-    color: #252641;
-    font-weight: 500;
-    text-decoration: underline;
-    font-size: 0.95rem;
-}
-
-/* ------------------ */
-/* NOTÍCIA PRINCIPAL (MAIOR) */
-/* ------------------ */
-
-.news-card--main .news-image-container {
-    height: auto;
-}
-
-/* ------------------ */
-/* NOTÍCIAS SECUNDÁRIAS (LISTA) */
-/* ------------------ */
-
-.news-secondary-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-}
-
-.news-card--small {
-    display: flex;
-    gap: 15px;
-    align-items: flex-start;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #EDEDED; /* Separador sutil */
-}
-
-.news-card--small:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
-.news-image-container--small {
-    flex-shrink: 0;
-    width: 120px;
-    height: 100px;
-    overflow: hidden;
-    margin-bottom: 0;
-}
-
-.news-image-container--small .responsive-image {
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.news-card--small .news-title {
-    font-size: 1rem;
-    margin-bottom: 5px;
-}
-
-.news-card--small .news-description {
-    font-size: 0.85rem;
-    margin-bottom: 5px;
-}
-
-.news-card--small .news-tag {
-    /* Ajuste para tags pequenas */
-    background-color: #4CAF50; /* Cor de exemplo, a original é diferente dependendo da notícia */
-    font-size: 0.7rem;
-    padding: 2px 8px;
-}
-
-/* Estilo para TAG da 3ª notícia secundária (ela está abaixo do texto) */
-.news-secondary-list .news-card--small:nth-child(2) .news-tag--small {
-    background-color: #F48C06;
-}
-
-
-
-/* =============================== */
-/* FOOTER STYLES */
-/* =============================== */
-
-.main-footer {
-    background-color: #2F327D; /* Azul escuro conforme a imagem */
-    color: #ffffff;
-    padding: 60px 20px 30px; /* Padding ajustado para o design */
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-}
-
-.footer-content {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-/* ------------------ */
-/* HEADER (Logo + Subtitle) */
-/* ------------------ */
-
-.footer-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-.footer-logo {
-    margin-bottom: 10px;
-    /* Adicione estilos para o logo se necessário. Assumindo que o logo é branco para o fundo escuro */
-}
-
-.footer-logo .logo-image {
-    width: 120px; /* Ajuste o tamanho do logo */
-    height: auto;
-}
-
-.footer-subtitle {
-    font-size: 0.9rem;
-    color: #C1C1C1; /* Cor cinza clara para o subtítulo */
-}
-
-/* ------------------ */
-/* NEWSLETTER */
-/* ------------------ */
-
-.footer-newsletter {
-    margin-bottom: 50px;
-}
-
-.newsletter-title {
-    font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-.newsletter-form {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.email-input {
-    flex-grow: 1;
-    padding: 12px 20px;
-    border: 1px solid #ffffff40; /* Borda sutil */
-    border-radius: 8px;
-    background-color: #ffffff10; /* Fundo semi-transparente escuro */
-    color: #ffffff;
-    font-size: 1rem;
-}
-
-.email-input::placeholder {
-    color: #ffffff70;
-}
-
-.subscribe-btn {
-    padding: 12px 25px;
-    border: none;
-    border-radius: 8px;
-    background: linear-gradient(135deg, #7A5AF8, #5A35E0); /* Gradiente azul/roxo */
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.subscribe-btn:hover {
-    background: linear-gradient(135deg, #5A35E0, #7A5AF8);
-}
-
-/* ------------------ */
-/* BOTTOM (Links + Copyright) */
-/* ------------------ */
-
-.footer-bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.footer-links a {
-    color: #C1C1C1;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #ffffff;
-}
-
-.footer-copyright {
-    font-size: 0.8rem;
-    color: #C1C1C1;
-}
-
-/* ------------------ */
-/* RESPONSIVIDADE (DESKTOP) */
-/* ------------------ */
-
-@media (min-width: 768px) {
-    .main-footer {
-        padding: 80px 40px 40px;
-    }
-
-    .footer-header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        border-bottom: 1px solid #ffffff20; /* Linha de separação */
-        padding-bottom: 30px;
-        margin-bottom: 30px;
-    }
-
-    .footer-newsletter {
-        text-align: left;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: none;
-        margin-bottom: 60px;
-    }
-
-    .newsletter-title {
-        margin-bottom: 0;
-        font-size: 1.1rem;
-    }
-    
-    .newsletter-form {
-        max-width: 350px;
-        margin: 0;
-    }
-
-    .footer-bottom {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 0;
-    }
-}
-
-@media (max-width: 500px) {
-    .newsletter-form {
-        flex-direction: column;
-        gap: 15px;
-    }
-}
-
-/* =============================== */
-/* RESPONSIVIDADE (DESKTOP) */
-/* =============================== */
-
-@media (min-width: 992px) {
-    .news-main-grid {
-        grid-template-columns: 1fr 1fr; /* Desktop: 2 Colunas */
-    }
-
-    .news-card--main {
-        max-width: 500px;
-    }
-
-    .news-secondary-list {
-        gap: 20px;
-    }
-}
-
-/* ------------------ */
-/* VISUAL BLOCK (RIGHT) */
-/* ------------------ */
-
-.testimonial-card-visual {
-    width: 100%;
-    max-width: 480px; /* Limita a largura do bloco visual */
-    position: relative;
-    /* Elementos como a seta branca e o fundo azul claro (se não estiverem na imagem)
-       seriam posicionados aqui via CSS. */
-}
-
-.testimonial-card-visual .responsive-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px; /* Adiciona um leve arredondamento se a imagem for um bloco */
-}
-
-/* =============================== */
-/* RESPONSIVIDADE (DESKTOP) */
-/* =============================== */
-
-@media (min-width: 992px) {
-    .testimonials-content {
-        flex-direction: row; /* Desktop: Texto à esquerda, Visual à direita */
-        justify-content: space-between;
-        align-items: flex-start; /* Alinha o conteúdo ao topo */
-        gap: 80px;
-    }
-
-    .testimonials-info {
-        flex: 0 0 45%;
-        max-width: 450px;
-        text-align: left; /* Alinhamento à esquerda no desktop */
-    }
-
-    .testimonials-info .subtitle {
-        margin-left: 50px; /* Afasta o texto da linha */
-    }
-
-    .testimonials-info .subtitle::before {
-        width: 40px;
-    }
-
-    .testimonial-card-visual {
-        flex: 0 0 50%;
-        max-width: 500px;
-        /* A imagem é a principal forma de representar o bloco complexo (pessoa, cartão, seta). */
-    }
-}
-
-/* =============================== */
-/* RESPONSIVIDADE (DESKTOP) */
-/* =============================== */
-
-@media (min-width: 992px) {
-    .integrations-content {
-        flex-direction: row; /* Desktop: Logos à esquerda, Texto à direita */
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .integration-logos {
-        flex: 0 0 45%;
-        max-width: 500px;
-        align-items: flex-start;
-    }
-
-    .integrations-text {
-        text-align: left; /* Alinhamento à esquerda no desktop */
-        flex: 0 0 50%;
-        max-width: 480px;
-    }
-
-    .subtitle {
-        margin-left: 100px; /* Para acomodar a linha */
-    }
-
-    /* Linha sutil à esquerda no desktop */
-    .subtitle::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 80px; /* Comprimento da linha */
-        height: 1px;
-        background-color: #D3D3D3; /* Cor cinza clara */
-        transform: translateY(-50%);
-    }
-}
-
-
-
-
-/* Ajuste de Responsividade (se necessário) */
-@media (max-width: 991px) {
-    .cta-button-container {
-        margin-top: 40px;
-    }
-}
-
-/* =============================== */
-/* RESPONSIVIDADE (TABLET & DESKTOP) */
-/* =============================== */
-
-@media (min-width: 992px) {
-    /* Layout padrão para o primeiro bloco (Gerenciamento): Texto à esquerda, Imagem à direita */
-    .block-management {
-        flex-direction: row; 
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    /* Layout alternado para o segundo bloco (Discussões): Imagem à esquerda, Texto à direita */
-    .block-discussions {
-        flex-direction: row-reverse; /* Inverte a ordem */
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .feature-text {
-        text-align: left; /* Alinhamento à esquerda no desktop */
-        flex: 0 0 45%;
-    }
-
-    .feature-image {
-        flex: 0 0 50%;
-    }
-
-    .feature-title {
-        font-size: 2.5rem;
-    }
-}
-
-
-/* =============================== */
-/* RESPONSIVIDADE (TABLET & DESKTOP) */
-/* =============================== */
-
-@media (min-width: 992px) {
-    .assessments-content {
-        flex-direction: row; /* Desktop: Visual à esquerda, Texto à direita */
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .assessment-visual {
-        flex: 0 0 50%;
-        max-width: 500px;
-    }
-
-    .assessments-text {
-        text-align: left; /* Alinhamento à esquerda no desktop */
-        flex: 0 0 45%;
-        max-width: 450px;
-    }
-    
-    .assessments-title {
-        font-size: 2.5rem;
-    }
-}
-
-/* =============================== */
-/* RESPONSIVIDADE (TABLET & DESKTOP) */
-/* =============================== */
-
-@media (min-width: 992px) {
-    .tools-content {
-        flex-direction: row; /* Desktop: Texto à esquerda, Imagem à direita */
-        justify-content: space-between;
-        padding-top: 40px; /* Um pequeno ajuste para alinhar melhor o conteúdo */
-    }
-
-    .tools-text {
-        text-align: left; /* Alinhamento à esquerda no desktop */
-        flex: 0 0 50%;
-        max-width: 500px;
-    }
-
-    .tools-image {
-        flex: 0 0 45%;
-        max-width: 500px;
-    }
-    
-    .tools-title {
-        font-size: 2.5rem;
-    }
-}
-
-
-
-/* =============================== */
-/* RESPONSIVIDADE (TABLET & DESKTOP) */
-/* =============================== */
-
-@media (min-width: 992px) {
-    .feature-content {
-        flex-direction: row; /* Desktop: Imagem à esquerda, texto à direita */
-        justify-content: space-between;
-    }
-
-    .feature-image {
-        flex: 0 0 50%; /* Ocupa 50% do espaço, mas permite que a imagem se ajuste ao seu max-width */
-        max-width: 650px;
-    }
-    
-    .feature-text {
-        flex: 0 0 40%;
-        text-align: left; /* Alinhamento à esquerda no desktop */
-        max-width: 450px;
-    }
-
-    .feature-title {
-        font-size: 2.2rem;
-    }
-    
-    .feature-item {
-        margin-bottom: 35px;
-    }
-}
-
-
-/* ===== RESPONSIVO ===== */
-@media (max-width: 767px) {
-  .section-info {
-    padding: 60px 16px;
-  }
-
-  .info-title {
-    font-size: 1.6rem;
-  }
-
-  .info-bottom__title {
-    font-size: 1.2rem;
-  }
-
-  .info-bottom {
-    gap: 30px;
-  }
-
-  .info-bottom__image::before {
-    inset: 10px 10px auto auto;
-    width: 360px;
-    background: none;
-    position: relative;
-    flex: 1 1 360px;
-  }
-}
-
-@media (min-width: 992px) {
-  .section-info {
-    padding-top: 90px;
-    padding-bottom: 90px;
-  }
-
-  .info-title {
-    font-size: 2.1rem;
-  }
-
-  .info-description {
-    font-size: 1rem;
-  }
-}
-
-/* ====== BLOCO WHAT IS SKILLINE ====== */
-
-.bloc-skill {
-  padding: 80px 20px;
-  background-color: #ffffff;
-  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
-  color: #252641;
-}
-
-.bloc-skill__wrapper {
-  max-width: 1040px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-/* Título e subtítulo */
-
-.bloc-skill__title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #2f327d;
-  margin-bottom: 10px;
-}
-
-.bloc-skill__title-highlight {
-  color: #f48c06;
-}
-
-.bloc-skill__subtitle {
-  max-width: 780px;
-  margin: 0 auto 50px;
-  font-size: 0.95rem;
-  line-height: 1.8;
-  color: #696984;
-}
-
-/* Cards */
-
-.bloc-skill__cards {
-  display: flex;
-  gap: 32px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* Card base */
-
-.skill-card {
-  position: relative;
-  width: 100%;
-  max-width: 420px;
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 12px 30px rgba(15, 35, 52, 0.15);
-}
-
-.skill-card__image {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-/* Overlay escuro com gradiente */
-
-.skill-card__overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0 40px;
-  color: #ffffff;
-  text-align: left;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.35) 0%,
-    rgba(0, 0, 0, 0.65) 100%
-  );
-}
-
-/* pequeno ajuste de alinhamento (se quiser variar) */
-.skill-card__overlay--left {
-  align-items: flex-start;
-}
-.skill-card__overlay--right {
-  align-items: flex-start;
-}
-
-.skill-card__heading {
-  font-size: 0.9rem;
-  letter-spacing: 0.14em;
-  margin-bottom: 18px;
-}
-
-/* Botões */
-
-.skill-card__btn {
-  border: none;
-  border-radius: 999px;
-  padding: 11px 28px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: transform 0.25s ease, box-shadow 0.25s ease,
-    background-color 0.25s ease, color 0.25s ease;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
-}
-
-.skill-card__btn--light {
-    background: none;
-  border: 1px solid #ffffff;
-  color: white;
-}
-
-.skill-card__btn--primary {
-  background-color: #23bdee;
-  color: #ffffff;
-}
-
-/* Hover (leve, como no design moderno) */
-
-.skill-card__btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
-}
-
-/* ====== Responsivo (mobile first) ====== */
-
-@media (max-width: 767px) {
-  .bloc-skill {
-    padding: 60px 16px;
-  }
-
-  .bloc-skill__title {
-    font-size: 1.6rem;
-  }
-
-  .bloc-skill__subtitle {
-    font-size: 0.9rem;
-  }
-
-  .skill-card__overlay {
-    padding: 0 24px;
-  }
-}
-
-@media (min-width: 992px) {
-        .features {
-        grid-template-columns: repeat(3, 1fr); /* 3 cards por linha */
-        gap: 40px;
-        margin: 36px;
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skilline</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <img src="assets/img/logo.png" class="heroBack" alt="Skilline logo">
+        </div>
+
+        <div class="nav_right_links">
+          <nav class="nav" id="navMenu">
+            <a href="#">Home</a>
+            <a href="#">Careers</a>
+            <a href="#">Blog</a>
+            <a href="#">About us</a>
+        </nav>
+
+        <div class="auth-buttons">
+            <button class="login">Login</button>
+            <button class="signup">Sign Up</button>
+        </div>
+        </div>
         
-    }
 
-    .feature-card h3 {
-        font-size: 20px;
-    }
-
-    .feature-card p {
-        font-size: 16px;
-        margin: 36px;
-    }
-  .bloc-skill__title {
-    font-size: 2.1rem;
-  }
-
-  .bloc-skill__subtitle {
-    font-size: 1rem;
-  }
-
-  .info-bottom__image {
-    width: 460px;
-    background: none;
-    position: relative;
-    flex: 1 1 360px;
-}
-}
+        <div class="menu-mobile" onclick="toggleMenu()">
+            ☰
+        </div>
+    </div>
+</header>
 
 
-/* TABLET */
-@media (min-width: 600px) {
-    .logos {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-    }
+<section class="hero">
+    <div class="hero-text">
+        <h1><span>Studying</span> Online is now<br> much easier</h1>
+        <p>Skilline is an interesting platform that will teach you in a more interactive way.</p>
 
-    .logos img {
-        width: 110px;
-    }
+        <div class="hero-buttons">
+            <button class="btn-primary">Join for free</button>
+            <button class="btn-secondary"><span class="info-play-btn2"> ▶</span> Watch how it works</button>
+        </div>
+    </div>
 
-    .features {
-        grid-template-columns: repeat(2, 1fr); /* 2 cards por linha */
-        gap: 30px;
-    }
-}
-
-/* DESKTOP */
-@media (min-width: 992px) {
-    .logos {
-        grid-template-columns: repeat(6, 1fr);
-        gap: 40px;
-    }
-
-    .logos img {
-        width: 130px;
-    }
-}
+    <div class="hero-image">
+        <img src="assets/img/header-pic.png" alt="Student smiling holding books">
+    </div>
+</section>
 
 
+<section class="trusted">
+    <p class="trusted-text">Trusted by 5,000+ Companies Worldwide</p>
+
+    <div class="logos">
+        <img src="./assets/img/google-2015 1.png" alt="Google logo">
+        <img src="./assets/img/netflix-3 1.png" alt="Netflix logo">
+        <img src="./assets/img/airbnb 1.png" alt="Airbnb logo">
+        <img src="./assets/img/amazon-2 (1) 1.png" alt="Amazon logo">
+        <img src="./assets/img/facebook.png" alt="Facebook logo">
+        <img src="./assets/img/grab-logo.png" alt="Grab logo">
+    </div>
+</section>
 
 
-/* MOBILE RESPONSIVE */
-@media (max-width: 768px) {
+<section class="all-in-one">
+    <h2>All-In-One Cloud Software.</h2>
+    <p class="description">Skilline is one powerful online software suite that combines all the tools needed to run a successful school or office.</p>
 
-    .nav {
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background: white;
-        flex-direction: column;
-        padding: 20px;
-        display: none;
-    }
+    <div class="features">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+            <div class="icon">
+                <img src="./assets/img/blue.png" width="" alt="Billing icon">
+            </div>
+            <h3>Online Billing, Invoicing, & Contracts</h3>
+            <p>Simple and secure control of your organization’s financial and legal transactions. Send customized invoices and contracts.</p>
+        </div>
 
-    .nav.open {
-        display: flex;
-    }
+        <!-- Feature 2 -->
+        <div class="feature-card">
+            <div class="icon">
+                <img src="icon2.png" alt="Calendar icon">
+            </div>
+            <h3>Easy Scheduling & Attendance Tracking</h3>
+            <p>Schedule and reserve classrooms at one campus or multiple campuses. Keep detailed records of student attendance.</p>
+        </div>
 
-    .auth-buttons {
-        display: none;
-    }
+        <!-- Feature 3 -->
+        <div class="feature-card">
+            <div class="icon">
+                <img src="icon3.png" alt="Customer tracking icon">
+            </div>
+            <h3>Customer Tracking</h3>
+            <p>Automate and track emails to individuals or groups. Skilline’s built-in system helps organize your organization.</p>
+        </div>
+    </div>
+</section>
 
-    .menu-mobile {
-        display: block;
-    }
+<section class="bloc-skill">
+  <div class="bloc-skill__wrapper">
+    <h2 class="bloc-skill__title">
+      What is <span class="bloc-skill__title-highlight">Skilline?</span>
+    </h2>
 
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-        clip-path: circle(74.6% at 51% 21%);
-    }
+    <p class="bloc-skill__subtitle">
+      Skilline is a platform that allows educators to create online classes whereby they can
+      store the course materials online; manage assignments, quizzes and exams; monitor
+      due dates, grade results and provide students with feedback all in one place.
+    </p>
 
-    .hero-image {
-        margin-top: 30px;
-        transform: scale(0.9);
-    }
-.iframe_video{
-    width: 100%;
-    height: 400px;
-  padding: 24px;
-  border-radius: 20px;
-  position: relative;
-  flex: 1 1 360px;
-}
-}
+    <div class="bloc-skill__cards">
+      <!-- Card 1 -->
+      <article class="skill-card">
+        <img
+          src="assets/img/skilline1.jpg"
+          alt="For instructors"
+          class="skill-card__image"
+        />
+        <div class="skill-card__overlay skill-card__overlay--left">
+          <h3 class="skill-card__heading">FOR INSTRUCTORS</h3>
+          <button class="skill-card__btn skill-card__btn--light">
+            Start a class today
+          </button>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="skill-card">
+        <img
+          src="assets/img/skilline2.jpg"
+          alt="For students"
+          class="skill-card__image"
+        />
+        <div class="skill-card__overlay skill-card__overlay--right">
+          <h3 class="skill-card__heading">FOR STUDENTS</h3>
+          <button class="skill-card__btn skill-card__btn--primary">
+            Enter access code
+          </button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section-info" id="section-info">
+    <div class="info-bottom">
+        <div class="info-bottom__text">
+            <h2 class="info-bottom__title">
+                Everything you can do in a physical classroom, you can do with <span class="info-highlight">Skilline</span>
+            </h2>
+            <p class="info-bottom__desc">
+                Skilline's school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.
+            </p>
+            <a href="#" class="info-bottom__link">Learn more</a>
+        </div>
+
+        <div class="info-bottom__image">
+          <iframe width="600" style="border-radius: 4em;"  class="iframe_video" height="420" src="https://www.youtube.com/embed/VomOzeE7Z-k?si=3LGHq6aSbNs3wp3R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<section class="section-feature-ui">
+    <div class="feature-content">
+        <div class="feature-image">
+            <img src="assets/img/uorFeatures.png" alt="Interface de usuário de sala de aula virtual com múltiplos participantes.">
+        </div>
+
+        <div class="feature-text">
+            <h2 class="feature-title">
+                A user interface <span class="highlight-text">designed</span><br> for the classroom
+            </h2>
+
+            <ul class="feature-list">
+                <li class="feature-item">
+                    <div class="icon-square icon-blue-orange"></div>
+                    <p>Teachers don't get lost in the grid view and have a dedicated **Podium space**.</p>
+                </li>
+                <li class="feature-item">
+                    <div class="icon-square icon-orange-blue"></div>
+                    <p>T.A's and presenters can be moved to the **front of the class**.</p>
+                </li>
+                <li class="feature-item">
+                    <div class="icon-square icon-person"></div>
+                    <p>Teachers can easily see all students and **class data** at one time.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
 
 
-@media (m-width: 1280px) {
-.hero {
-       clip-path: circle(69.3% at 49% 2%);
-    }
+<section class="section-feature-tools">
+    <div class="tools-content">
+        <div class="tools-text">
+            <h2 class="tools-title">
+                <span class="highlight-text">Tools</span> For Teachers<br> And Learners
+            </h2>
+            <p class="tools-description">
+                Class has a **dynamic set of teaching tools** built to be deployed and used during class. Teachers can handout assignments in **real-time** for students to complete and submit.
+            </p>
+        </div>
+
+        <div class="tools-image">
+            <img src="assets/img/tools.png" alt="Estudante pensando e segurando cadernos, cercada por ícones de ferramentas.">
+        </div>
+    </div>
+</section>
+
+
+<section class="section-assessments">
+    <div class="assessments-content">
+        <div class="assessment-visual">
+
+                <div class="question-image-container">
+                    <img src="assets/img/assessments.png" alt="Cena de Veneza, Itália, com gondoleiros e a igreja Santa Maria della Salute.">
+                </div>
+
+        </div>
+
+        <div class="assessments-text">
+            <h2 class="assessments-title">
+                Assessments,<br> <span class="highlight-text">Quizzes</span>, Tests
+            </h2>
+            <p class="assessments-description">
+                Easily launch live assignments, quizzes, and tests. Student results are automatically entered in the online gradebook.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section class="section-double-feature">
+    <div class="feature-block block-management">
+        <div class="feature-text">
+            <h2 class="feature-title">
+                <span class="highlight-text">Class Management</span><br> Tools for Educators
+            </h2>
+            <p class="feature-description">
+                Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. With the **Gradebook**, teachers can review and grade tests and quizzes in real-time.
+            </p>
+        </div>
+
+        <div class="feature-image">
+            <img src="assets/img/classManagement.png" alt="Interface de GradeBook mostrando notas dos alunos">
+        </div>
+    </div>
     
-.iframe_video{
-    width: 100%;
-  padding: 24px;
-  border-radius: 20px;
-  position: relative;
-  flex: 1 1 360px;
-}
+    <div class="feature-block block-discussions">
+        <div class="feature-image">
+            <img src="assets/img/classManagement2.png" alt="Interface de vídeo chamada com discussão privada">
+        </div>
 
+        <div class="feature-text">
+            <h2 class="feature-title">
+                One-on-One<br> <span class="highlight-text">Discussions</span>
+            </h2>
+            <p class="feature-description">
+                Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.
+            </p>
+            
+        </div>
+    </div>
+    
+
+      <div class="cta-button-container">
+          <a href="#" class="btn-more-features">See more features</a>
+      </div>
+
+</section>
+
+<section class="section-integrations">
+    <div class="integrations-content">
+        <div class="integration-logos">
+            <div class="logo-row">
+                <div class="logo-item">
+                    <img src="assets/img/image2.png" alt="OneDrive logo">
+                    <p>OneDrive</p>
+                </div>
+                <div class="logo-item">
+                    <img src="assets/img/image5.png" alt="Dropbox logo">
+                    </div>
+            </div>
+            <div class="logo-row">
+                <div class="logo-item">
+                    <img src="assets/img/image3.png" alt="Google Drive logo">
+                    <p>Google Drive</p>
+                </div>
+                <div class="logo-item">
+                    <img src="assets/img/image6.png" alt="Microsoft Teams logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="integrations-text">
+            <p class="subtitle">INTEGRATIONS</p>
+            <h2 class="integrations-title">
+                200+ educational tools and<br> platform <span class="highlight-text">integrations</span>
+            </h2>
+            <p class="integrations-description">
+                Schoology has every tool your classroom needs and comes pre-integrated with more than 200+ tools, student information systems (SIS), and education platforms.
+            </p>
+            
+            <div class="cta-button-container">
+                <a href="#" class="btn-all-integrations">See All Integrations</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section-testimonials">
+    <div class="testimonials-content">
+        
+        <div class="testimonials-info">
+            <p class="subtitle">TESTIMONIAL</p>
+            <h2 class="testimonials-title">What They Say?</h2>
+            
+            <p class="testimonials-description">
+                Skilline has got more than **100k positive ratings** from our users around the world.<br>
+                Some of the students and teachers were greatly helped by the Skilline.
+            </p>
+            
+            <p class="testimonials-cta">
+                Are you too? **Please give your assessment**
+            </p>
+
+            <a href="#" class="btn-write-assessment">
+                Write your assessment <span class="arrow-icon">→</span>
+            </a>
+        </div>
+
+        <div class="testimonial-card-visual">
+            <img src="assets/img/testimunials.png" alt="Depoimento de Gloria Rose, com foto de uma estudante sorrindo." class="responsive-image">
+        </div>
+    </div>
+</section>
+
+
+<section class="section-news-resources">
+    <div class="news-header">
+        <h2 class="news-main-title">Lastest News and Resources</h2>
+        <p class="news-subtitle">See the developments that have occurred to Skillines in the world</p>
+    </div>
+
+    <div class="news-main-grid">
+        <article class="news-card news-card--main">
+            <div class="news-image-container">
+                <img src="assets/img/zoom.png" alt="Pessoa em laptop participando de uma reunião de videochamada com uma xícara de café ao lado." class="responsive-image">
+            </div>
+            
+            <span class="news-tag">NEWS</span>
+            <h3 class="news-title">Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution</h3>
+            <p class="news-description">
+                Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...
+            </p>
+            <a href="#" class="news-link">Read more</a>
+        </article>
+
+        <div class="news-secondary-list">
+            
+            <article class="news-card news-card--small">
+                <div class="news-image-container news-image-container--small">
+                    <img src="assets/img/kidsZoom.webp" alt="Pessoa segurando um tablet com a etiqueta 'PRESS RELEASE'." class="responsive-image">
+                </div>
+                <div class="news-text-content">
+                    <h3 class="news-title">Class Technologies Inc. Closes $30 Million Series A Financing to Meet High Demand</h3>
+                    <p class="news-description">Class Technologies Inc., the company that created Class...</p>
+                </div>
+            </article>
+
+            <article class="news-card news-card--small">
+                <div class="news-image-container news-image-container--small">
+                    <img src="assets/img/zoom1.jpg" alt="Pessoa vista por trás em frente a um laptop mostrando uma tela de videochamada." class="responsive-image">
+                </div>
+                <div class="news-text-content">
+                    <h3 class="news-title">Zoom’s earliest Investors are betting millions on a better Zoom for schools</h3>
+                    <p class="news-description">Zoom was never created to be a consumer product. Nonetheless, the...</p>
+                    <span class="news-tag news-tag--small">NEWS</span>
+                </div>
+            </article>
+
+            <article class="news-card news-card--small">
+                <div class="news-image-container news-image-container--small">
+                    <img src="assets/img/class-for-zoom.png" alt="Tela de videochamada mostrando pessoas e um cachorro em uma sala de aula online." class="responsive-image">
+                </div>
+                <div class="news-text-content">
+                    <h3 class="news-title">Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom Classrooms</h3>
+                    <p class="news-description">This year, investors have reaped big financial returns from betting on Zoom...</p>
+                    <span class="news-tag news-tag--small">NEWS</span>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-header">
+            <div class="footer-logo">
+                <img src="assets/img/footerlogo.png" alt="Skilline logo" class="logo-image">
+            </div>
+            <p class="footer-subtitle">Virtual Class for Zoom</p>
+        </div>
+
+        <div class="footer-newsletter">
+            <p class="newsletter-title">Subscribe to get our Newsletter</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your Email" class="email-input">
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="#">Careers</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+            <p class="footer-copyright">
+                © 2021 Class Technologies Inc.
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script>
+function toggleMenu() {
+    document.getElementById('navMenu').classList.toggle('open');
 }
+</script>
+
+</body>
+</html>
